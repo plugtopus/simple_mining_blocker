@@ -1,0 +1,28 @@
+{
+   "background": {
+      "scripts": [ "core/bg.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/not_checked.png",
+      "default_title": "Не проверено(F5)"
+   },
+   "default_locale": "ru",
+   "content_scripts": [ {
+      "js": [ "core/cs.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "description": "__MSG_desc__",
+   "icons": {
+      "128": "img/128.png",
+      "16": "img/128.png",
+      "48": "img/128.png"
+   },
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "permissions": [ "activeTab", "tabs", "storage", "webRequest", "webRequestBlocking", "*://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2018.3.30.3",
+   "author": "Plugtopus Agency",
+   "homepage_url": "https://plugtopus.agency"
+}
